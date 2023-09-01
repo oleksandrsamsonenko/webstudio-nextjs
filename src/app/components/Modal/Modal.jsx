@@ -9,7 +9,7 @@ export default function Modal({ close }) {
 
         <form className={styles.form}>
           <label className={styles.label} htmlFor="name">
-            Ім'я
+            {"Ім'я"}
             <div className={styles.inputWrapper}>
               <input
                 className={styles.input}
