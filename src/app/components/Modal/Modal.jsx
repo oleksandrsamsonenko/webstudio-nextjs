@@ -7,7 +7,7 @@ export default function Modal({ close }) {
       <div className={styles.modal}>
         <h2 className={styles.title}>Залиште свої дані, ми вам передзвонимо</h2>
 
-        <form className={styles.form}>
+        <form className={styles.form} autoComplete="off">
           <label className={styles.label} htmlFor="name">
             {"Ім'я"}
             <div className={styles.inputWrapper}>
