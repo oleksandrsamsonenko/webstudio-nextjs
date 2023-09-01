@@ -1,6 +1,6 @@
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
-import { Close } from './icon';
+import { Close } from './MobileIcon';
 import styles from './MobileMenu.module.scss';
 
 export default function MobileMenu({ open, close }) {

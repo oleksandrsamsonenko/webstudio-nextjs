@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import MobileMenu from '../../MobileMenu/MobileMenu';
-import { BurgerIcon } from './icon';
+import { BurgerIcon } from './BurgerIcon';
 import styles from './Burger.module.scss';
 
 export default function Burger() {
