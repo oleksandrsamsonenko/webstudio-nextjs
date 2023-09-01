@@ -36,48 +36,50 @@ export default function MobileMenu({ open, close }) {
   const pathname = usePathname();
   return (
     <div className={open ? styles.isopen : styles.isclosed}>
-      <ul className={styles.navbar}>
-        {navlinks.map(link => (
-          <li key={link.id}>
-            <Link
-              href={link.path}
-              onClick={close}
-              className={
-                pathname === link.path ? styles.linkActive : styles.link
-              }
-            >
-              {link.title}
-            </Link>
-          </li>
-        ))}
-      </ul>
-      <div className={styles.contacts}>
-        <div className={styles.contactUs}>
-          <a href="tel:+380961111111" className={styles.phone}>
-            +38 096 111 11 11
-          </a>
-          <a href="mailto:info@devstudio.com" className={styles.mail}>
-            info@devstudio.com
-          </a>
-        </div>
-        <ul className={styles.socials}>
-          {socialsList.map(item => (
-            <li key={item.id} className={styles.item}>
-              <a
-                href={item.href}
-                target="_blank"
-                className={styles.socialsLink}
+      <div className={styles.menuContainer}>
+        <ul className={styles.navbar}>
+          {navlinks.map(link => (
+            <li key={link.id}>
+              <Link
+                href={link.path}
+                onClick={close}
+                className={
+                  pathname === link.path ? styles.linkActive : styles.link
+                }
               >
-                {item.title}
-              </a>
+                {link.title}
+              </Link>
             </li>
           ))}
         </ul>
-      </div>
+        <div className={styles.contacts}>
+          <div className={styles.contactUs}>
+            <a href="tel:+380961111111" className={styles.phone}>
+              +38 096 111 11 11
+            </a>
+            <a href="mailto:info@devstudio.com" className={styles.mail}>
+              info@devstudio.com
+            </a>
+          </div>
+          <ul className={styles.socials}>
+            {socialsList.map(item => (
+              <li key={item.id} className={styles.item}>
+                <a
+                  href={item.href}
+                  target="_blank"
+                  className={styles.socialsLink}
+                >
+                  {item.title}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
 
-      <span onClick={close} className={styles.close}>
-        {<Close />}
-      </span>
+        <span onClick={close} className={styles.close}>
+          {<Close />}
+        </span>
+      </div>
     </div>
   );
 }

@@ -91,6 +91,7 @@ export default function Portfolio({ filter }) {
                   src={item.image}
                   alt={item.title}
                   sizes="90vw"
+                  priority
                   fill
                 />
                 <p className={styles.overlay}>
