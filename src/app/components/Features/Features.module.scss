@@ -1,0 +1,56 @@
+.features {
+  @extend .container;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  @media screen and (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.iconWrapper {
+  display: flex;
+  justify-content: center;
+  padding: 25px 0px;
+  border-radius: 4px;
+  background-color: $feature;
+}
+
+.textWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.title {
+  color: $black;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.42px;
+}
+
+.description {
+  color: $dark-grey;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.42px;
+}

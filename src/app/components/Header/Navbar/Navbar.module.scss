@@ -1,0 +1,32 @@
+.navbar {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.linkActive {
+  @extend .link;
+  color: $accent-color;
+  position: relative;
+  &::after {
+    position: absolute;
+    bottom: -28px;
+    left: 0;
+    content: '';
+    height: 4px;
+    width: 100%;
+    background-color: $accent-color;
+    border-radius: 2px;
+  }
+}

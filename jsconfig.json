@@ -1,7 +1,22 @@
+// {
+//   "compilerOptions": {
+//     "baseUrl": "src",
+//     "paths": {
+//       "@components/*": ["src/app/components/*"]
+//       // "paths": {
+//       //   "@/*": ["./src/*"]
+//     }
+//   }
+// }
+
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["/src/*"],
+      "@styles/*": ["/src/styles/*"],
+      "@components/*": ["/src/app/components/*"],
+      "@images/*": ["/src/images/*"]
     }
   }
 }

@@ -1,0 +1,40 @@
+.categories {
+  @extend .container;
+  min-height: 65vh;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.button {
+  cursor: pointer;
+  border-radius: 4px;
+  background: $feature;
+  border: none;
+  min-width: 73px;
+  color: $black;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: 0.48px;
+  padding: 6px 21px;
+  white-space: nowrap;
+  transition: 300ms;
+
+  &Active {
+    @extend .button;
+    background-color: $accent-color;
+    color: $white;
+  }
+}
+
+.button:hover,
+.button:focus {
+  scale: 1.05;
+}

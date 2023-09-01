@@ -1,0 +1,54 @@
+.skills {
+  @extend .container;
+  padding-top: 34px;
+  padding-bottom: 94px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+  @media screen and (max-width: 1198px) {
+    display: none;
+  }
+}
+
+.title {
+  color: $black;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 1.08px;
+}
+
+.skillsList {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.item {
+  width: 100%;
+  position: relative;
+}
+
+.image {
+  object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+  height: unset !important;
+}
+
+.description {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  text-align: center;
+  background-color: rgba(47, 48, 58, 0.8);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}

@@ -1,0 +1,74 @@
+.hero {
+  // padding-inline: 15px;
+  @extend .container;
+  position: relative;
+
+  height: 400px;
+  // background-image: linear-gradient(
+  //     rgba(47, 48, 54, 0.4),
+  //     rgba(47, 48, 54, 0.4)
+  //   ),
+  //   url('../../../images/heroPhone.jpg');
+
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  // @media screen and (min-width: 768px) {
+  //   background-image: linear-gradient(
+  //       rgba(47, 48, 54, 0.4),
+  //       rgba(47, 48, 54, 0.4)
+  //     ),
+  //     url('../../../images/heroTablet.jpg');
+  // }
+  @media screen and (min-width: 1200px) {
+    height: 600px;
+
+    // background-image: linear-gradient(
+    //     rgba(47, 48, 54, 0.4),
+    //     rgba(47, 48, 54, 0.4)
+    //   ),
+    //   url('../../../images/heroPC.jpg');
+  }
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.image {
+  // height: 400px;
+  object-fit: cover;
+  width: 100% !important;
+  position: relative !important;
+  height: 400px !important;
+  filter: brightness(0.7);
+  @media screen and (min-width: 1200px) {
+    height: 600px !important;
+  }
+}
+
+.title {
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 1.61;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  max-width: 360px;
+  @media screen and (min-width: 1200px) {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.37;
+  }
+}

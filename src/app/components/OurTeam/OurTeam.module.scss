@@ -1,0 +1,103 @@
+.ourTeam {
+  background-color: $feature;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.wrapper {
+  @extend .container;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.title {
+  color: $black;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0.84px;
+}
+
+.teamList {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  @media screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  @media screen and (min-width: 1200px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.item {
+  width: 100%;
+  position: relative;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.image {
+  object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+  height: unset !important;
+}
+
+.description {
+  background: #fff;
+  padding-top: 30px;
+  padding-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.name {
+  color: $black;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.48px;
+}
+
+.position {
+  color: $dark-grey;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.48px;
+}
+
+.icon {
+  fill: $light-grey;
+  transition: 300ms;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  background-color: $white;
+  gap: 10px;
+  padding-bottom: 24px;
+  border-radius: inherit;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  border-radius: 50%;
+  transition: 300ms;
+}
+
+.link:hover,
+.link:focus {
+  background-color: $accent-color;
+  .icon {
+    fill: $white;
+  }
+}

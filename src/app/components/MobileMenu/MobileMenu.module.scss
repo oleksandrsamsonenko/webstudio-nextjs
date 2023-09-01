@@ -1,0 +1,107 @@
+.wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 10;
+  background-color: $white;
+  padding: 48px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  transition: 300ms;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.isclosed {
+  @extend .wrapper;
+  top: -100%;
+}
+
+.isopen {
+  @extend .wrapper;
+  top: 0;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.link {
+  color: $black;
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+}
+
+.linkActive {
+  @extend .link;
+  color: $accent-color;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.contactUs {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.phone {
+  color: $accent-color;
+  font-size: 34px;
+  font-weight: 500;
+  letter-spacing: 0.68px;
+}
+
+.mail {
+  color: $dark-grey;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0.48px;
+}
+
+.socials {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.socialsLink {
+  color: $accent-color;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.22;
+  letter-spacing: 0.36px;
+  position: relative;
+}
+
+.item {
+  position: relative;
+}
+
+.item:not(:last-child):after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -10px;
+  height: 100%;
+  width: 1px;
+  background-color: rgba(33, 33, 33, 0.2);
+}
