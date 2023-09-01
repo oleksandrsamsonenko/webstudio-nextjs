@@ -17,6 +17,7 @@ export default function Modal({ close }) {
                 name="name"
                 id="name"
                 required
+                autoComplete="off"
               />
               <User styleProp={styles.icon} />
             </div>
@@ -30,6 +31,7 @@ export default function Modal({ close }) {
                 name="phone"
                 id="phone"
                 required
+                autoComplete="off"
               />
               <Phone styleProp={styles.icon} />
             </div>
@@ -43,6 +45,7 @@ export default function Modal({ close }) {
                 name="email"
                 id="email"
                 required
+                autoComplete="off"
               />
               <Email styleProp={styles.icon} />
             </div>
