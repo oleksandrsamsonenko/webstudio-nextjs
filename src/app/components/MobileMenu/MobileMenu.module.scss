@@ -27,12 +27,12 @@
 
 .isclosed {
   @extend .wrapper;
-  top: -100%;
+  right: -100%;
 }
 
 .isopen {
   @extend .wrapper;
-  top: 0;
+  right: 0;
 }
 
 .close {
