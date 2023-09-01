@@ -9,10 +9,8 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <Logo position="header" />
-      <div className={styles.wrapper}>
-        <Navbar />
-        <Contacts />
-      </div>
+      <Navbar />
+      <Contacts />
       <Burger />
     </header>
   );

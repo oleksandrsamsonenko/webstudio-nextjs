@@ -11,12 +11,3 @@
     height: 80px;
   }
 }
-
-.wrapper {
-  display: flex;
-  gap: 96px;
-
-  @media screen and (min-width: 1200px) {
-    gap: 315px;
-  }
-}
